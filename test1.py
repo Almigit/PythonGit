@@ -1,0 +1,1 @@
+number = float(3)
