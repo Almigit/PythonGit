@@ -1,4 +1,4 @@
-class flower:
+class Flower:
     def __init__(self, name, price, blue):
         self.name = name
         self.price = price
@@ -27,10 +27,10 @@ class flower:
 
         
 
-rose = flower("Rose", 200, False) 
-rose_blue = flower("Rose", 200, True) 
-tulip_cheap = flower("Tulip", 150, False)
-tulip_expensive = flower("Tulip", 250, False)
+rose = Flower("Rose", 200, False) 
+rose_blue = Flower("Rose", 200, True) 
+tulip_cheap = Flower("Tulip", 150, False)
+tulip_expensive = Flower("Tulip", 250, False)
 
 rose.count_price()
 rose_blue.count_price()
