@@ -1,4 +1,4 @@
-class Flower:
+class flower:
     def __init__(self, name, price, blue):
         self.name = name
         self.price = price
@@ -12,14 +12,11 @@ class Flower:
             print("--------------")
             print(self.name)
             print(self.price)
-            return
-       
-        if (self.name == "Rose" and self.blue == True):
+        elif (self.name == "Rose" and self.blue == True):
             self.price += 200
             print("--------------")
             print(self.name)
             print(self.price)
-            return
         else:
             print("--------------")
             print(self.name)
@@ -27,11 +24,11 @@ class Flower:
 
         
 
-rose = Flower("Rose", 200, False) 
-rose_blue = Flower("Rose", 200, True) 
-tulip_cheap = Flower("Tulip", 150, False)
-tulip_expensive = Flower("Tulip", 250, False)
-
+rose = flower("Rose", 200, False) 
+rose_blue = flower("Rose", 200, True) 
+tulip_cheap = flower("Tulip", 150, False)
+tulip_expensive = flower("Tulip", 250, False)
+    
 rose.count_price()
 rose_blue.count_price()
 tulip_cheap.count_price()

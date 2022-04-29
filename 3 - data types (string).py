@@ -58,6 +58,7 @@ for letter in sentence:
         if(counter == len(sentence)):
             print(letter)
 
+
 sentence2 = "Big red dog"
 
 print(sentence2) #full
@@ -66,29 +67,18 @@ print(sentence2[3]) #space
 print(len(sentence2)) #10
 print(sentence2[len(sentence2) - 1]) #g
 
-name = "Alexys"
-name2 = "Alexy"
-name3 = "Alex"
-name4= "Al"
-threeLetters = ""
-counter2 = 1
+# To check if a certain phrase or character is present in a string, we can use the keyword in.
 
-for letter in name4:
-    if(counter2 % 3 == 0): # если делится на три тогда мы выдаем текст и обновляем наш буфер
-        threeLetters = threeLetters + letter
-        print(threeLetters)
-        threeLetters = ""
-    else:
-        threeLetters = threeLetters + letter # пока не делится не 3 мы прибалвяем буквы
+txt = "The best things in life are free!"
+print("free" in txt)
 
-    if(len(name4) % 3 != 0):
-       if(counter2 == len(name4)):
-           print(threeLetters)
+# Use it in an if statement:
 
-    counter2 = counter2 + 1
+txt = "The best things in life are free!"
+if "free" in txt:
+  print("Yes, 'free' is present.")
 
+# To check if a certain phrase or character is NOT present in a string, we can use the keyword not in.
 
-
-
-
-
+txt = "The best things in life are free!"
+print("expensive" not in txt)
