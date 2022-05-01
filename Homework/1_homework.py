@@ -73,10 +73,13 @@ drink3 = Drink("Orange juice", 80, False)
 # создаю лист меню
 menu = [salad1, salad2, salad3, main_dish1, main_dish2, main_dish3, drink1, drink2, drink3]
 
-# выполняю метод show_price для каждого элемента списка
-print("Menu")
-print("--------------------")
-for item in menu:
-    item.show_price()
-print("--------------------")
-print("Note: all prices are specified in rubles")
+# создаю функцию print_menu
+def print_menu():
+    print("Menu")
+    print("--------------------")
+    for item in menu:
+        item.show_price()
+    print("--------------------")
+    print("Note: all prices are specified in rubles")
+
+print_menu()
