@@ -12,6 +12,4 @@ while True:
                 icon_path="water.ico",
                 duration=10)
     how_much_should_i_sleep = 3600 - current_minute * 60
-    print("")
     time.sleep(how_much_should_i_sleep)
-   
